@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, initial-scale=1.0">
+    <meta name="description" content="Tourism website to promote Archidona, showcasing its tourist attractions, local products, and culture.">
+    <title>Tourism Archidona</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/Css.Css">
+    <link rel="icon" href="Imagenes/logo1.png">
+</head>
+<body>
+    <nav>
+        <img class="zoom" src="Imagenes/Logo2.png" width="70" height="70" alt="logo">
+        <a href="Tourism-Archidona.html">Information</a>
+        <a href="Tourist-Attractions.html">Tourist Attractions</a>
+        <a href="Local-Products.html">Local Products</a>
+        <a href="Contact.html">Contact</a>
+        <a href="Location.html">Location</a>
+        <div style="float: right;">
+            <a href="index.html" style="margin-right: 15px;">Spanish</a>
+            <a href="" style="margin-right: 15px;">English</a>
+        </div>
+    </nav>
+
+    <section class="banner">
+        <h2>Welcome to Archidona</h2>
+        <p><strong>Discover the beauty and culture of our region</strong></p>
+    </section>
+    
+    <div class="container">
+        <section class="informacion">
+            <h2>Information about Archidona</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="Imagenes/Archidona-aerea2.jpg" alt="Image-of-Archidona" class="img-fluid zoom">
+                </div>
+                <div class="col-md-6">
+                    <div class="highlight">
+                        <h5><strong>Archidona</strong> is a town in Andalusia with a rich history dating back to prehistoric times. It has witnessed the passage of various civilizations, from the Iberians and Romans to the Visigoths and Muslims.</h5>
+                    </div>
+                    <p>During the <strong>Muslim period</strong>, Archidona gained significant importance and was one of the main defensive strongholds in the region, highlighted by its emblematic <em>castle and fortress</em> that still dominates the landscape. In <strong>1462</strong>, it was conquered by the Catholic Monarchs, becoming part of the Kingdom of Castile.</p>
+                    <p>Today, Archidona is known for its <strong>historic center with Baroque style</strong>, its famous <strong>Plaza Ochavada</strong>, and its vibrant cultural traditions reflected in its festivities, gastronomy, and local crafts. It is a destination that combines <em>history, culture, and nature</em>, offering an authentic experience of <strong>rural Andalusia</strong>.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+        
+    <div class="container">
+        <section class="informacion">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="Imagenes/Archidona-aerea.jpg" alt="Aerial-Image" class="img-fluid zoom">
+                </div>
+                <div class="col-md-6">
+                    <div class="highlight">
+                        <h5><strong>Archidona</strong> is a charming Andalusian village located in the province of Malaga, known for its rich history, architecture, and traditions.</h5>
+                    </div>
+                    <p>With cobbled streets and traditional Andalusian houses, <strong>Archidona</strong> retains an authentic and picturesque atmosphere that invites you to explore its corners. One of its most emblematic places is the <strong>Plaza Ochavada</strong>, a jewel of Andalusian Baroque that has become a symbol of the town.</p>
+                    <p>In addition to its <strong>historical heritage</strong>, Archidona offers delicious gastronomy, with typical products such as olive oil, cured meats, and artisanal sweets. Surrounded by mountains and nature, it is an ideal destination for those seeking tranquility, culture, and unique landscapes in the heart of <strong>Andalusia</strong>.</p>
+                </div>
+            </div>
+        </section>
+    </div> 
+
+    <a href="#inicio" id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up fa-2x"></i>
+    </a>
+    
+    <script src="Js/JS.js"></script>
+
+
+    <footer>
+        <p>&copy; 2024 Tourism Archidona - All rights reserved</p>
+        <div style="display: flex; align-items: center;">
+            <a href="https://www.instagram.com" target="_blank" style="margin: 0 10px;">
+                <i class="fab fa-instagram fa-2x"></i>
+            </a>
+            <a href="https://www.facebook.com" target="_blank" style="margin: 0 10px;">
+                <i class="fab fa-facebook fa-2x"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" style="margin: 0 10px;">
+                <i class="fab fa-twitter fa-2x"></i>
+            </a>
+            <a href="https://www.youtube.com" target="_blank" style="margin: 0 10px;">
+                <i class="fab fa-youtube fa-2x"></i>
+            </a>
+        </div>
+        
+        <div>
+            <p><a href="legal-notice.html">Legal Notice</a> | <a href="privacy-policy.html">Privacy Policy</a> | <a href="cookies-policy.html">Cookie Policy</a></p>
+        </div>
+    </footer>
+
+    <section class="cookies" id="cookie-section" style="display: none;">
+        <h2 class="cookies__titulo">Do you accept our Cookies?</h2>
+        <p class="cookies__texto">We use cookies to improve your experience on the website.</p>
+        <div class="cookies__botones">
+            <button class="cookies__boton cookies__boton--no" id="no-cookie-btn">No</button>
+            <button class="cookies__boton cookies__boton--si" id="si-cookie-btn">Yes</button>
+        </div>
+    </section>
+    
+    <script>
+        // Cookies //
+document.addEventListener('DOMContentLoaded', function() {
+  const cookieSection = document.getElementById('cookie-section');
+
+  // Verificar si ya se aceptaron las cookies //
+  if (localStorage.getItem('cookiesAccepted') !== 'true') {
+      cookieSection.style.display = 'block';
+  }
+
+  // Escuchar los clicks en el botón de "Sí" //
+  document.getElementById('si-cookie-btn').addEventListener('click', function() {
+      localStorage.setItem('cookiesAccepted', 'true'); // Guardar la aceptación en localStorage //
+      cookieSection.style.display = 'none';
+  });
+
+  // Escuchar los clicks en el botón de "No" //
+  document.getElementById('no-cookie-btn').addEventListener('click', function() {
+      localStorage.setItem('cookiesAccepted', 'false'); // Guardar el rechazo en localStorage //
+      cookieSection.style.display = 'none';
+  });
+});
+  </script>
+    
+</body>
+</html>

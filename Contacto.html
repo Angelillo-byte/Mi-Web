@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, initial-scale=1.0">
+    <meta name="description" content="Página web de turismo para promover Archidona, mostrando sus atractivos turísticos, productos locales y cultura.">
+    <title>Turismo Archidona</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/Css.Css">
+    <link rel="icon" href="Imagenes/logo1.png">
+</head>
+<body>
+    <nav>
+        <img class="zoom" src="Imagenes/Logo2.png" width="70" height="70" alt="logo">
+        <a href="index.html">Información</a>
+        <a href="Atractivos-Turísticos.html">Atractivos Turísticos</a>
+        <a href="Productos-Locales.html">Productos Locales</a>
+        <a href="Contacto.html">Contacto</a>
+        <a href="Ubicacion.html">Ubicación</a>
+        <div style="float: right;">
+            <a href="" style="margin-right: 15px;">Español</a>
+            <a href="Contact.html" style="margin-right: 15px;">Ingles</a>
+        </div>
+    </nav>
+    
+    <section class="banner">
+        <h2>Bienvenidos a Archidona</h2>
+        <p><strong>Descubre la belleza y cultura de nuestra región</strong></p>
+    </section>
+
+    <section id="contacto" class="container my-5">
+        <h2 class="text-center">Contacto</h2>
+        <p class="text-center">Si tienes alguna pregunta o necesitas más información, por favor completa el siguiente formulario:</p>
+        <form>
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" class="form-control" placeholder="Tu nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" class="form-control" placeholder="Tu correo electrónico" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Mensaje</label>
+                <textarea id="message" class="form-control" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-success btn-block">Enviar</button>
+        </form>
+    </section>
+
+<a href="#inicio" id="backToTop" class="back-to-top">
+    <i class="fas fa-arrow-up fa-2x"></i>
+</a>
+
+    <script src="Js/JS.js"></script>
+
+    <footer>
+        <p>&copy; 2024 Turismo Archidona - Todos los derechos reservados</p>
+        <div style="display: flex; align-items: center;">
+            <a href="https://www.instagram.com" target="_blank" style="margin: 0 10px;">
+                <i class="fab fa-instagram fa-2x"></i>
+            </a>
+            <a href="https://www.facebook.com" target="_blank" style="margin: 0 10px;">
+                <i class="fab fa-facebook fa-2x"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" style="margin: 0 10px;">
+                <i class="fab fa-twitter fa-2x"></i>
+            </a>
+            <a href="https://www.youtube.com" target="_blank" style="margin: 0 10px;">
+                <i class="fab fa-youtube fa-2x"></i>
+            </a>
+        </div>
+        
+        <div>
+            <p><a href="aviso-legal.html">Aviso Legal</a> | <a href="politica-privacidad.html">Política de Privacidad</a> | <a href="politica-cookies.html">Política de Cookies</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
